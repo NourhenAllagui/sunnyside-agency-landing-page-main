@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/5b539bff41.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="relative h-screen bg-[url('./assets/images/desktop/image-header.jpg')] bg-cover bg-center"
+    >
+      <div class="flex items-center justify-between px-5 py-4">
+        <div>
+          <img src="./assets/images/logo.svg" class="h-30 w-30" />
+        </div>
+        <ul class="hidden items-center gap-x-6 text-white sm:flex">
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li class="rounded-full bg-white px-7 py-3 font-medium text-black">
+            Contact
+          </li>
+        </ul>
+        <div class="px-6 py-2 text-lg text-white sm:!hidden" id="menuTrigger">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark !hidden"></i>
+        </div>
+      </div>
+      <ul
+        id="menu"
+        class="absolute top-16 hidden w-full border-b bg-white py-2 *:my-2 *:px-6 *:py-2"
+      >
+        <li class="border-l-4 border-black bg-gray-100">About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+      <div class="flex h-full flex-col items-center justify-start">
+        <h1
+          class="mb-12 mt-16 text-center text-6xl font-bold uppercase text-white sm:mb-28 sm:mt-48"
+        >
+          We are creatives
+        </h1>
+        <img src="./assets/images/icon-arrow-down.svg" class="h-30 w-30" />
+      </div>
+    </header>
+    <div
+      class="flex w-full flex-col-reverse items-center justify-between sm:flex-row"
+    >
+      <div class="w-full px-4 sm:w-2/4 sm:px-4">
+        <h2
+          class="mb-10 mt-4 text-center text-4xl font-bold sm:mt-0 sm:text-start sm:text-3xl lg:text-6xl"
+        >
+          Transform your brand
+        </h2>
+        <p class="mb-6 text-center sm:text-justify">
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
+        <p
+          class="mb-10 text-center font-bold uppercase hover:underline sm:mb-0 sm:text-start"
+        >
+          Learn more
+        </p>
+      </div>
+      <div class="w-full sm:w-2/4">
+        <img
+          src="./assets/images/desktop/image-transform.jpg"
+          class="h-full w-full"
+        />
+      </div>
+    </div>
+    <div class="flex w-full flex-col items-center justify-between sm:flex-row">
+      <div class="w-full sm:w-2/4">
+        <img
+          src="./assets/images/desktop/image-stand-out.jpg"
+          class="h-full w-full"
+        />
+      </div>
+      <div class="w-full px-6 sm:w-2/4 sm:px-4">
+        <h2
+          class="mb-10 mt-4 text-center text-4xl font-bold sm:mt-0 sm:text-start sm:text-3xl lg:text-6xl"
+        >
+          Stand out to the right audience
+        </h2>
+        <p class="mb-6 text-center sm:text-justify">
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and extend
+          your brand in digital places.
+        </p>
+        <p
+          class="mb-10 text-center font-bold uppercase hover:underline sm:mb-0 sm:text-start"
+        >
+          Learn more
+        </p>
+      </div>
+    </div>
+    <div class="flex w-full flex-col items-center justify-between lg:flex-row">
+      <div class="w-full lg:w-2/4">
+        <div
+          class="relative flex h-screen flex-col items-center justify-center bg-[url('./assets/images/desktop/image-graphic-design.jpg')] bg-cover bg-center"
+        >
+          <h2
+            class="absolute bottom-36 mb-10 text-center text-4xl font-bold sm:bottom-64 sm:text-start sm:text-6xl lg:bottom-96"
+          >
+            Graphic design
+          </h2>
+          <p
+            class="absolute bottom-10 mb-6 w-2/3 text-center text-sm sm:bottom-40 sm:text-justify sm:text-xl lg:w-1/2"
+          >
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+      </div>
+      <div class="w-full lg:w-2/4">
+        <div
+          class="relative flex h-screen flex-col items-center justify-center bg-[url('./assets/images/desktop/image-photography.jpg')] bg-cover bg-center"
+        >
+          <h2
+            class="absolute bottom-32 mb-10 text-center text-4xl font-bold sm:bottom-64 sm:text-start sm:text-6xl lg:bottom-96"
+          >
+            Photography
+          </h2>
+          <p
+            class="absolute bottom-10 mb-6 w-2/3 text-center text-sm sm:bottom-40 sm:text-justify sm:text-xl lg:w-1/2"
+          >
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex h-full flex-col items-center justify-center sm:relative sm:flex-row"
+    >
+      <h2
+        class="top-16 mb-10 mt-10 text-center text-2xl font-medium uppercase text-slate-400 sm:absolute sm:top-40 sm:mb-0 sm:mt-0 sm:text-5xl lg:top-8"
+      >
+        Client testimonials
+      </h2>
+      <div
+        class="mb-20 flex h-full flex-col items-center justify-center sm:mb-0"
+      >
+        <img
+          class="mb-10 h-24 w-24 rounded-full"
+          src="./assets/images/image-emily.jpg"
+        />
+        <p class="mb-10 w-[90%] text-center text-xl sm:mb-0 sm:w-1/2">
+          We put our trust in Sunnyside and they delivered, making sure our
+          needs were met and deadlines were always hit.
+        </p>
+        <h3
+          class="bottom-32 text-xl font-extrabold sm:absolute sm:bottom-56 lg:bottom-20"
+        >
+          Emily R.
+        </h3>
+        <p
+          class="bottom-24 font-medium text-slate-300 sm:absolute sm:bottom-48 lg:bottom-12"
+        >
+          Marketing Director
+        </p>
+      </div>
+      <div
+        class="mb-20 flex h-full flex-col items-center justify-center sm:static sm:mb-0 sm:h-screen"
+      >
+        <img
+          class="mb-10 h-24 w-24 rounded-full"
+          src="./assets/images/image-thomas.jpg"
+        />
+        <p
+          class="mb-10 w-[90%] text-center text-xl sm:relative sm:mb-0 sm:w-1/2"
+        >
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+          success made it a satisfying and enjoyable experience.
+        </p>
+        <h3 class="bottom-56 text-xl font-extrabold sm:absolute lg:bottom-20">
+          Thomas S.
+        </h3>
+        <p
+          class="bottom-48 font-medium text-slate-300 sm:absolute lg:bottom-12"
+        >
+          Chief Operating Officer
+        </p>
+      </div>
+      <div
+        class="mb-20 flex flex-col items-center justify-center sm:static sm:mb-0"
+      >
+        <img
+          class="mb-10 h-24 w-24 rounded-full"
+          src="./assets/images/image-jennie.jpg"
+        />
+        <p class="mb-10 w-[90%] text-center text-xl sm:mb-0 sm:w-1/2">
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
+        </p>
+        <h3 class="bottom-56 text-xl font-extrabold sm:absolute lg:bottom-20">
+          Jennie F.
+        </h3>
+        <p
+          class="bottom-48 font-medium text-slate-300 sm:absolute lg:bottom-12"
+        >
+          Business Owner
+        </p>
+      </div>
+    </div>
+    <div class="flex">
+      <img
+        class="h-full w-1/4"
+        src="./assets/images/desktop/image-gallery-milkbottles.jpg"
+      />
+      <img
+        class="h-full w-1/4"
+        src="./assets/images/desktop/image-gallery-orange.jpg"
+      />
+      <img
+        class="h-full w-1/4"
+        src="./assets/images/desktop/image-gallery-cone.jpg"
+      />
+      <img
+        class="h-full w-1/4"
+        src="./assets/images/desktop/image-gallery-sugarcubes.jpg"
+      />
+    </div>
+    <div class="flex h-60 flex-col items-center justify-around bg-teal-500">
+      <img class="mt-5 h-10" src="./assets/images/logo.svg" />
+      <ul class="flex gap-6 font-medium text-white">
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+      </ul>
+      <ul class="flex gap-6">
+        <li><img src="./assets/images/icon-facebook.svg" /></li>
+        <li><img src="./assets/images/icon-instagram.svg" /></li>
+        <li><img src="./assets/images/icon-twitter.svg" /></li>
+        <li><img src="./assets/images/icon-pinterest.svg" /></li>
+      </ul>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://nourhen-allagui.netlify.app/">Nourhen Allagui</a>.
+    </div>
+    <script>
+      const menuTrigger = document.querySelector("#menuTrigger");
+      const menu = document.querySelector("#menu");
+      const menuTriggerIcon = menuTrigger.querySelectorAll("i");
+      menuTrigger.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        for (let icon of menuTriggerIcon) {
+          icon.classList.toggle("!hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
